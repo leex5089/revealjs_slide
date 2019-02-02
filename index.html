@@ -1,0 +1,173 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+	<div class="reveal">
+	<div class="slides">
+		<section>Single Horizontal Slide</section>
+		<section>
+			<section>Vertical Slide 1</section>
+			<section>Vertical Slide 2</section>
+		</section>
+
+		<section data-markdown>
+		<textarea data-template>
+		## Page title
+
+		A paragraph with some text and a [link](http://hakim.se).
+		</textarea>
+		</section>
+
+
+		<section data-markdown>
+		<script type="text/template">
+			- Item 1 <!-- .element: class="fragment" data-fragment-index="1" -->
+			- Item 2 <!-- .element: class="fragment" data-fragment-index="2" -->
+		</script>
+		</section>
+
+		<section data-markdown>
+			<script type="text/template">
+			<!-- .slide: data-background="#ff0000" -->
+				Markdown content
+			</script>
+		</section>
+
+		<section>
+		  <img data-src="image.png">
+		  <iframe data-src="http://hakim.se"></iframe>
+		  <video>
+		    <source data-src="video.webm" type="video/webm" />
+		    <source data-src="video.mp4" type="video/mp4" />
+		  </video>
+		</section>
+
+		<section data-background-color="#ff0000">
+			<h2>Color</h2>
+		</section>
+		<section data-background-color="#000000">
+			<h2>Color</h2>
+		</section>
+		<section data-background-color="#FFD700">
+			<h2>Color</h2>
+		</section>
+		<section data-background-color="#FF6347">
+			<h2>Color</h2>
+		</section>
+		<section data-background-iframe="https://slides.com" data-background-interactive>
+			<h2>Iframe</h2>
+		</section>
+	<section data-transition="zoom">
+	<h2>This slide will override the presentation transition and zoom!</h2>
+</section>
+
+<section id="" data-transition="slide-in fade-out" style="text-align: left;">
+					<h3 style="text-align: left;">
+						Spatial RD specification
+					</h3>
+					<br>
+					<p style="text-align: left;">
+						\begin{align*}
+						y_{i} = \beta T_{i} + \gamma Dist_i + \delta T_{i} Dist_i + \mu_s + \varepsilon_{i}
+						\end{align*}
+					</p>
+					<br>
+						<p>
+							Project coordinates into distance to boundary ($Dist_i$)
+						</p>
+						<ul>
+							<li>
+								$Dist_i < 0$ for control areas
+							</li>
+						</ul>
+				</section>
+
+
+<script>
+	var link = document.createElement( 'link' );
+	link.rel = 'stylesheet';
+	link.type = 'text/css';
+	link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+	document.getElementsByTagName( 'head' )[0].appendChild( link );
+</script>
+
+
+
+
+
+	</div>
+</div>
+
+<!-- To end the activation of the CSS framework of Reveal.js -->
+
+		<!-- Java script commands should be placed at the bottom of an HTML file, to reduce the perceived loading time  -->
+
+		<!-- Load head.js, providing a number of utility classses. http://headjs.com/ -->
+		<script src="lib/js/head.min.js"></script>
+		<!-- Load reveal.js -->
+		<script src="js/reveal.js"></script>
+
+		<!-- Import MathJax, to use TeX for mathematic expressions -->
+		<script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+		<!-- Allow inline math expressions by using $ -->
+		<!-- http://tex.stackexchange.com/questions/27633/mathjax-inline-mode-not-rendering -->
+		<script type="text/x-mathjax-config">
+		  MathJax.Hub.Config({
+		    tex2jax: {
+		      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+		      processEscapes: true
+		    }
+		  });
+		</script>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+			Reveal.initialize({
+	// other options ...
+
+	math: {
+		mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+		config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
+	},
+
+	dependencies: [
+		{ src: 'plugin/math/math.js', async: true }
+	]
+});
+		</script>
+	</body>
+</html>
+
