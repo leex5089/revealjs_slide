@@ -1,0 +1,10 @@
+cd "C:\Users\wonhe\git_projects\revealjs"
+git status
+git add .
+git commit -m 'edit'
+git push
+
+
+
+git config --global user.email "leex5089@umn.edu"
+git config --global user.name "leex5089"
