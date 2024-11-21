@@ -50,6 +50,7 @@ Borowsky, University of Minnesota<br></font>
 <font size="4">11/22/2024<br></font>
 <font size="4">2024 APPAM Research Conference, National Harbor, MD </font>
 
+  
  
 
 </section>
@@ -69,14 +70,14 @@ Motivation and relevance 1
 In 2019, almost 60% of children under age 6 attended one or more weekly nonparental care
 setting <font size="4">(USDOE, 2021)</font>
 </li>
-<ul style="color:#000000; font-size:0.8em">
+<ul style="color:#000000; font-size:0.7em">
 
 <li  >
 States have adopted regulations that set minimum standards for child care facilities and programs
 </li>
 
 <li  >
-Structural features of care settings thought to be related to quality and safety 
+Structural features of care settings thought to be related to quality and safety, such as Staff-to-Child Ratio (SCR)
 </li>
 
 
@@ -88,7 +89,7 @@ Structural features of care settings thought to be related to quality and safety
 <li class="fragment highlight-current-red">
 Policy relevance 
 </li>
-<ul style="color:#000000; font-size:0.8em">
+<ul style="color:#000000; font-size:0.7em">
 
  
 <li  >
@@ -109,7 +110,7 @@ Increasing interest in expansion of child care by deregulation
 <li class="fragment highlight-current-red">
 SCR strictness impacts childcare establishments through opposing forces
 </li>
-<ul style="color:#000000; font-size:0.8em">
+<ul style="color:#000000; font-size:0.7em">
 
 <li  >
 #1: &#8593 employment, &#8593 service quality &rarr; &#8593 demand for ECE &#8593 Q 
@@ -283,7 +284,6 @@ Summary statistics for county-level analysis
          style="border: none; background: none; box-shadow: none; width: 65%;">
   </div>
 
-
  
  
 </section>
@@ -297,8 +297,8 @@ Summary statistics for county-level analysis
 
 <section data-transition="none">
   <p style="text-align: center; color:#902020; font-size:0.7em;">
-County-year level analysis: Effect of child-staff ratio on N of employees, N of establishments, annual payroll per Employee, and staff turnover rate
-   </p>
+County-year level analysis: Effect of staff-to-child ratio on N of employees per 100 families, N of establishments per 100 families, annual payroll per Employee, and staff turnover rate
+   </p> 
   <div style="display: flex; justify-content: center; align-items: center;">
     <img src="https://raw.githubusercontent.com/leex5089/revealjs_slide/master/figures/table6_b.png" 
          style="border: none; background: none; box-shadow: none; width: 70%;">
@@ -317,34 +317,64 @@ County-year level analysis: Effect of child-staff ratio on N of employees, N of 
 
 <section data-transition="none">
   <p style="text-align: center; color:#902020; font-size:0.7em;">
- County-year level analysis: Effect of child-staff ratio on N of establishment per family, by income tercile
+ County-year level analysis: Effect of staff-to-child ratio on N of establishment per 100 families, by income tercile
    </p>
   <div style="display: flex; justify-content: center; align-items: center;">
     <img src="https://raw.githubusercontent.com/leex5089/revealjs_slide/master/figures/table7_b.png" 
          style="border: none; background: none; box-shadow: none; width: 70%;">
   </div>
 
+
  
  
 </section>
-
-
-
 
 <section data-transition="none">
-  <p style="text-align: center; color:#902020; font-size:0.8em;">
-Illustration of zone-level area near the state border with distance-based subzones
+  <p style="text-align: center; color:#902020; font-size:0.7em;">
+    Illustration of zones near the state border with distance-based subzones
   </p>
-<div style="display: flex; justify-content: center; align-items: center; gap: 20px;">
-    <img src="https://raw.githubusercontent.com/leex5089/revealjs_slide/master/figures/figure_border_zone.png" 
-         style="border: none; background: none; box-shadow: none; width: 75%;">
-    <img src="https://raw.githubusercontent.com/leex5089/revealjs_slide/master/figures/border_provider.png" 
-         style="border: none; background: none; box-shadow: none; width: 30%;">
-  </div> 
+  
+  <div style="display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-wrap: nowrap;">
+
+    <!-- First graph -->
+    <figure style="text-align: center; flex: 3; margin: 0;">
+      <figcaption style="font-size: 0.4em; color: #333; margin-bottom: 5px;">
+        Constructed zones for analysis
+      </figcaption>
+      <img src="https://raw.githubusercontent.com/leex5089/revealjs_slide/master/figures/figure_border_zone.png" 
+           style="border: none; background: none; box-shadow: none; width: 100%; max-height: 100%;">
+    </figure>
+
+    <!-- Second graph -->
+    <figure style="text-align: center; flex: 1.5; margin: 0;">
+      <figcaption style="font-size: 0.4em; color: #333; margin-bottom: 5px;">
+        Provider-level D&B data near state border
+      </figcaption>
+      <img src="https://raw.githubusercontent.com/leex5089/revealjs_slide/master/figures/border_provider.png" 
+           style="border: none; background: none; box-shadow: none; width: 100%; max-height: 100%;">
+    </figure>
+
+
+  </div>
+<ul style="color:#000000; font-size:0.4em">
 
  
+<li>
+  Zones were created using the "Build Balanced Zones" tool in ArcGIS (Genetic Algorithm); parameters: number of zones, size, etc.
+</li>
+
+<li>
+  Zones are adjacent to the state border, limited to a 10-mile distance from the border line. Each state-zone is further partitioned into 5 subzones (2-mile blocks).
+</li>
+
+<li>
+  Provider-level data from D&B is aggregated to each subzone for analysis.
+</li>
+
+</ul>
  
 </section>
+
 
 <section data-transition="none">
   <p style="text-align: center; color:#902020; font-size:0.8em;">
@@ -355,7 +385,7 @@ Summary statistics for regression discontinuity design
          style="border: none; background: none; box-shadow: none; width: 80%;">
   </div>
 
- 
+
  
 </section>
 
@@ -398,11 +428,12 @@ Not much difference in outcomes at the border
 
 
 
+
   
 <section data-transition="none">
   <p style="text-align: center; color:#902020; font-size:0.7em;">
-RDD analysis: Effect of child-staff ratio on N establishments, N
-of employees, and sales volume, by income tercile
+RDD analysis: Effect of staff-to-child ratio on N establishments per 100 families, N
+of employees  per 100 families, and sales volume per 100 families, by income tercile 
    </p>
   <div style="display: flex; justify-content: center; align-items: center;">
     <img src="https://raw.githubusercontent.com/leex5089/revealjs_slide/master/figures/table10_b.png" 
@@ -439,6 +470,7 @@ Synthetic control estimation - Louisiana policy change in 2015  </p>
 
     </figure>
   </div>
+
  
 </section>
 
@@ -517,7 +549,7 @@ Conclusion
   <i>Note: S. indicates statistical significance at conventional levels; N.S., if otherwise.</i>
 </p>
 
-<ul style="color:#000000; font-size:0.5em">
+<ul style="color:#000000; font-size:0.4em">
 
  
 <li  > 
@@ -526,7 +558,7 @@ Analysis of data from 2011–2017 shows limited evidence that SCR significantly 
 </li>
  
 <li  >
-The signs of the estimates generally align  with findings from Hotz and Xiao, indicating that stricter policies increase service costs and reduce demand 
+The signs of the estimates generally align  with findings from Hotz and Xiao (2011), indicating that stricter policies increase service costs and reduce demand 
 
 </li>
 <li  >
@@ -536,9 +568,7 @@ RDD analysis reveals an increase in childcare employment in lower-income areas
 <li  >
 Going forward, plan to add more years of data to increase power (requires identifying exact year of policy change)
 </li>
-
 </ul>
-
  
 </section>
 
@@ -599,9 +629,8 @@ regulation on supply location and population distribution</font>
   </p>
   <div style="display: flex; justify-content: center; align-items: center;">
     <img src="https://raw.githubusercontent.com/leex5089/revealjs_slide/master/figures/SB_figure1b.png" 
-         style="border: none; background: none; box-shadow: none; width: 80%;">
+         style="border: none; background: none; box-shadow: none; width: 70%;">
   </div>
-
 
  
  
